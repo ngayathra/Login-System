@@ -68,11 +68,11 @@
     </div>
 
     <!-- sign up form  -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5 z-index">
         <div class="row">
             <div class="col-lg-6 col-md-12 mx-auto shadows py-3">
                 <h2 class="text-center text-info">Sign up form</h2>
-                <form action="" method="POST" class="bolder-text">
+                <form action="signup.php" method="POST" class="bolder-text">
                     <div class="form-group">
                         <label for="name">Name: </label>
                         <input type="text" name="name" id="name" placeholder="Enter your name" class="form-control">
@@ -85,18 +85,23 @@
                         <label for="password">Password: </label>
                         <input type="text" name="password" id="password" placeholder="#Password" class="form-control">
                     </div>
-                    
-                    <div class="form-check form-check-inline text-center">
-                        <input type="radio" name="gender" value="male" class="form-check-input" id="male">
-                        <label for="male" class="form-check-lable">Male</label>
-                    </div>
-                    <div class="form-check form-check-inline text-center">
-                        <input type="radio" name="gender" value="female" class="form-check-input" id="female">
-                        <label for="female" class="form-check-lable">Female</label>
-                    </div>  
-                    <div class="mx-auto ">
 
-                        <button type="submit" class="btn btn-block btn-info">Sign up</button>
+                    <!-- new div add to make the gender radio buttons center  -->
+                    <div class="mx-auto col-4 border my-2">
+                        <h6 class="text-center">Gender:</h6>
+                        <div class="form-check form-check-inline text-center">
+                            <input type="radio" name="gender" value="male" class="form-check-input" id="male">
+                            <label for="male" class="form-check-lable">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="gender" value="female" class="form-check-input" id="female">
+                            <label for="female" class="form-check-lable">Female</label>
+                        </div>  
+                    </div>
+
+
+                    <div class="mx-auto ">
+                        <button type="submit" name="signup" class="btn btn-block btn-info">Sign up</button>
                     </div>                      
                     
                 </form>
@@ -104,6 +109,45 @@
         </div>
     </div>
 
+    <!-- footer section start here -->
+
+    <div class="container-fulid">
+        <div class="row">
+            <div class="col-12  py-2 bg-dark text-center text-light">
+                <h3>Login page</h3>
+                <hr>
+            </div>
+        </div>
+        <div class="row bg-dark text-light">
+            <div class="col-lg-4 card bg-dark">
+                <div class="card-body">
+                    <h5 class="card-title text-center"> Site map</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt blanditiis illum, ipsam repellendus, dignissimos obcaecati natus, ab impedit eligendi ea dolorem eaque. Commodi quasi, porro totam ab necessitatibus enim?</p>
+                </div>
+            </div>
+            <div class="col-lg-4 card bg-dark">
+                <div class="card-body">
+                    <h5 class="card-title text-center"> Contact us</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi est aperiam, quaerat eveniet assumenda corrupti omnis qui similique officiis doloremque vitae laborum minima tenetur odio nostrum quos obcaecati nemo illum.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 card bg-dark">
+                <div class="card-body">
+                    <h5 class="card-title text-center">About us</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse nesciunt sit nisi aperiam rem modi, itaque eligendi harum recusandae aut non, nostrum ex provident id, perferendis accusamus voluptatibus consequuntur reiciendis.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-12 bg-dark text-center text-light">
+                <h6> 2018 &copy; All right received</h6>
+            </div>
+        </div>
+    </div>
 
 
 
