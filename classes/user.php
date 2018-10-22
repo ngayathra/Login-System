@@ -32,4 +32,28 @@ class User{
         $sql = "DELETE FROM userTable WHERE id = $userID";
         return $sql;
     }
+
+    /*
+    // Search users
+    //  all
+    //  by userID
+    //  recently added
+    */
+
+    // query for search all
+    public function searchAll(){
+        $sql = "SELECT * FROM userTable";
+        return $sql;
+    }
+
+    // query for search by id
+    public function searchById($userId){
+        $sql = "SELECT * FROM userTable WHERE username = '$userId'";
+        return $sql;
+    }
+
+    //query for get recently added users
+    public function recentUsers(){
+        $sql = "SELECT * FROM userTable WHERE ############ LIMIT 4";
+    }
 }
